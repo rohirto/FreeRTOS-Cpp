@@ -16,7 +16,7 @@ add_subdirectory(${FREERTOS_CPP_PATH})
 ## FreeRTOS Kernel Config ##
 # Include the FreeRTOS kernel and configure it for the ARM M0 port so the examples will compile.
 set(FREERTOS_KERNEL_PATH ${CMAKE_CURRENT_LIST_DIR}/FreeRTOS-Kernel)
-set(FREERTOS_PORT POSIX_GCC CACHE STRING \"\")
+set(FREERTOS_PORT GCC_POSIX CACHE STRING \"\")
 set(FREERTOS_HEAP 4)
 add_library(freertos_config INTERFACE)
 target_include_directories(freertos_config INTERFACE
